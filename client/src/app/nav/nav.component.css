@@ -1,0 +1,10 @@
+.something{
+    font-family: monospace;
+}
+
+
+.loginbtn:hover{
+    box-shadow: 50px 50px 10px 10px inset black;
+    color: white;
+
+}

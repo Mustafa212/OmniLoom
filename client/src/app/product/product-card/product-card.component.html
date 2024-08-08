@@ -1,0 +1,41 @@
+<div
+  class="rounded-[10%] flex flex-col justify-between p-2 card  drop-shadow-md	"
+  style="width: 300px; height: 250px"
+>
+  <div class="mx-auto place-content-center w-fit imgcover ">
+    <img src="{{ products()?.photoUrl }}" alt=""  class="pimg"/>
+  </div>
+  <div class="p-5">
+    <div class="flex justify-between ">
+        <span class="basis-1/2 product-name text-md font-bold">{{products()?.name}}</span>
+         <span  class="font-extrabold">$<span class="font-medium ">{{products()?.price}}</span> </span>
+    </div>
+
+    <h2 class="text-slate-600 mt-2">{{products()?.brand}}</h2>
+    @if (accountService.currentuser()?.isAdmin) {
+    <div>
+        <div class="example-button-row">
+          <div class="example-flex-container flex ">
+            <div class="example-button-container">
+              <button mat-mini-fab aria-label="Example icon button with a heart icon " class="custom-fab1 me-5 mt-3" (click)="setDeletedId()">
+                <mat-icon>delete</mat-icon>
+              </button>
+            </div>
+            <div class="example-button-container">
+              <button mat-mini-fab  aria-label="Example icon button with a home icon"  class="custom-fab me-5 mt-3" (click)="setUpdatedProd()">
+                <mat-icon>edit</mat-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+   
+    
+  }
+  </div>
+</div>
+
+

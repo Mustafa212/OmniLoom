@@ -1,0 +1,58 @@
+.imgcover{
+    position: relative;
+
+    width: 170px;
+    height: 50px;
+}
+
+.pimg{
+    transform: translateY(-55%);
+    object-fit: cover;
+    transition: all .3s ease-in;
+
+}
+
+
+.product-name {
+    display: block;            
+    width: 100%;               
+    white-space: nowrap;       
+    overflow: hidden;         
+    text-overflow: ellipsis;   
+  }
+  
+
+
+
+
+  .card:hover .pimg{
+    transform: translateY(-48%);
+    
+  }
+
+
+
+  .custom-fab1 {
+    background-color: transparent !important;
+    border: 0.5px solid red !important;
+    color: black !important;
+  }
+  
+  .custom-fab1:hover {
+    background-color: red  !important;
+    color: white !important;
+  }
+
+
+  .custom-fab {
+    background-color: transparent !important;
+    border: 0.5px solid blueviolet !important;
+    color: black !important;
+  }
+  
+  .custom-fab:hover {
+    background-color: blueviolet !important;
+    color: white !important;
+
+    
+  }

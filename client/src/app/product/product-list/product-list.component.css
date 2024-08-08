@@ -1,0 +1,37 @@
+.products{
+    background-color: #dddddd25;
+}
+
+
+.banner {
+    background: linear-gradient(to left,#4f46e5, #4c1d95 ); /* Deep purple gradient */
+    position: relative; /* Positioning context for the shine effect */
+    overflow: hidden; /* Ensures the shine effect stays within the bounds */
+    color: white;
+  }
+  
+  .banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%; /* Makes sure the shine covers the gradient */
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    transform: skewX(-20deg); /* Creates the angled shine effect */
+    opacity: 0.6; /* Adjust opacity for the desired glossiness */
+    pointer-events: none; /* Ensures it doesn’t block interactions */
+  }
+
+.card{
+  background-color: rgb(230, 230, 230);
+  color: black;
+}
+.card i{
+  transition: all 0.3s ease-in;
+}
+
+.card:hover i{
+  transform: scale(1.1);
+  color: green;
+}
